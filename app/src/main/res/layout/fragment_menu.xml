@@ -30,6 +30,7 @@
         app:abb_rippleEnabled="true"
         app:abb_tabAnimation="slide"
         app:abb_animationDuration="300"
+        app:itemIconTint="@color/icons_color"
         app:abb_textAppearance="@style/CustomText"
         app:abb_iconSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
