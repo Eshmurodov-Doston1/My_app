@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.mp3player_n1.fragments.Homeragment
 import com.example.mp3player_n1.fragments.SettingsFragment
+import com.example.mp3player_n1.fragments.UserFragment
 import com.example.mp3player_n1.models.Category
 
 class ViewPagerAdapter(var list: List<Category>,fragmentManager: FragmentManager):FragmentStatePagerAdapter(fragmentManager,
@@ -24,7 +25,7 @@ BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
                 return   SettingsFragment.newInstance(list[position].name!!, list[position].position!!)
             }
             2->{
-                return Homeragment()
+                return UserFragment()
             }
             else ->{
                 return Homeragment()
