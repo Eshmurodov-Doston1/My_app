@@ -19,13 +19,13 @@ BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
     override fun getItem(position: Int): Fragment {
         when(position){
             0->{
-                return   Homeragment()
+                return   Homeragment.newInstance(list[position].name!!, list[position].position!!)
             }
             1->{
                 return   SettingsFragment.newInstance(list[position].name!!, list[position].position!!)
             }
             2->{
-                return UserFragment()
+                return UserFragment.newInstance(list[position].name!!, list[position].position!!)
             }
             else ->{
                 return Homeragment()
